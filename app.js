@@ -6,6 +6,8 @@ const cors = require('cors');
 const getTypesRouter = require('./routes/getTypes');
 const getTypeImageRouter = require('./routes/typeImage');
 const getPhaseAddonImageRouter = require('./routes/phaseAddonImage');
+const getProjectImage = require('./routes/projectImage');
+const getProjectPrice = require('./routes/projectPrice');
 
 const app = express();
 
@@ -19,6 +21,9 @@ app.use(cors());
 app.use('/gettypes', getTypesRouter);
 app.use('/typeimage', getTypeImageRouter);
 app.use('/phaseaddonimage', getPhaseAddonImageRouter);
+app.use('/projectimage', getProjectImage);
+app.use('/projectprice', getProjectPrice);
+
 
 
 module.exports = app;

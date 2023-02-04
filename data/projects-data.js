@@ -1,7 +1,7 @@
 const PROJECT_TYPES = [
     {
         id: 0,
-        fullName: "Simple single-storey single-family building - pomdidorki dla sprawdzenia",
+        fullName: "Simple single-storey single-family building",
         complexityCategory: 0,
         icon: "0.png"
     },
@@ -37,11 +37,11 @@ const PROJECT_TYPES = [
     },
 ]
 
-PERCENTAGE_INDICATORS = [
+const PERCENTAGE_INDICATORS = [
     {
         min: 0,
         max: 200*1000,
-        indicator: [5, 5, 5, 5, 5],
+        indicators: [5, 5, 5, 5, 5],
     },
     {
         min: 200*1000 + 1,
@@ -117,18 +117,18 @@ const PROJECT_ADDONS = [
 ]
 
 const PROJECT_PHASES = [
-{
-    id: 0,
-    type: "phase",
-    fullName: "Concept phase",
-    priceFactor: 0.15,
-    icon: "phase_0.png"
-},
+    {
+        id: 0,
+        type: "phase",
+        fullName: "Concept phase",
+        priceFactor: 0.15,
+        icon: "phase_0.png"
+    },
     {
         id: 1,
         type: "phase",
         fullName: "Building permit phase",
-        priceFactor: 0.3,
+        priceFactor: 0.35,
         icon: "phase_1.png"
     },
     {
@@ -142,7 +142,7 @@ const PROJECT_PHASES = [
         id: 3,
         type: "phase",
         fullName: "All phases from concept to construction",
-        priceFactor: 0.5,
+        priceFactor: 0.9,
         icon: "phase_3.png"
     },
 ]
@@ -152,4 +152,5 @@ module.exports = {
     PROJECT_TYPES,
     PROJECT_ADDONS,
     PROJECT_PHASES,
+    PERCENTAGE_INDICATORS
 }
