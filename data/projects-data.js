@@ -1,7 +1,7 @@
 const PROJECT_TYPES = [
     {
         id: 0,
-        fullName: "Simple single-storey single-family building",
+        fullName: "Simple single-storey single-family building - pomdidorki dla sprawdzenia",
         complexityCategory: 0,
         icon: "0.png"
     },
@@ -88,53 +88,68 @@ PERCENTAGE_INDICATORS = [
 const PROJECT_ADDONS = [
     {
         id: 0,
+        type: "addon",
         fullName: "Map for design purposes",
         priceFactor: 0.02,
-        icon: "0.png"
+        icon: "addon_0.png"
     },
     {
         id: 1,
+        type: "addon",
         fullName: "Interior design",
         priceFactor: 0.5,
-        icon: "1.png"
+        icon: "addon_1.png"
     },
     {
         id: 2,
+        type: "addon",
         fullName: "The project concerns the superstructure, extension or reconstruction of an existing facility",
         priceFactor: 0.15,
-        icon: "2.png"
+        icon: "addon_2.png"
     },
     {
         id: 3,
+        type: "addon",
         fullName: "The project concerns a facility or area under the supervision of a monument conservator",
         priceFactor: 0.3,
-        icon: "3.png"
+        icon: "addon_3.png"
     },
 ]
 
 const PROJECT_PHASES = [
 {
     id: 0,
-        fullName: "Concept phase",
+    type: "phase",
+    fullName: "Concept phase",
     priceFactor: 0.15,
-    icon: "0.png"
+    icon: "phase_0.png"
 },
     {
         id: 1,
+        type: "phase",
         fullName: "Building permit phase",
         priceFactor: 0.3,
-        icon: "1.png"
+        icon: "phase_1.png"
     },
     {
         id: 2,
+        type: "phase",
         fullName: "Executive project",
         priceFactor: 0.5,
-        icon: "2.png"
+        icon: "phase_2.png"
     },
     {
         id: 3,
+        type: "phase",
         fullName: "All phases from concept to construction",
         priceFactor: 0.5,
-        icon: "3.png"
+        icon: "phase_3.png"
     },
 ]
+
+
+module.exports = {
+    PROJECT_TYPES,
+    PROJECT_ADDONS,
+    PROJECT_PHASES,
+}
